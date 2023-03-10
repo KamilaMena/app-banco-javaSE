@@ -4,31 +4,31 @@ public class Cliente {
 
     //Atributos
 
-    private String Nombre;
-    private String Ocupacion;
+    private String nombre;
+    private String ocupacion;
     private String ID;
     private CuentaBancaria cuentabancaria;
 
     public Cliente(String nombre, String ocupacion, String ID) {
-        Nombre = nombre;
-        Ocupacion = ocupacion;
+        this.nombre = nombre;
+        this.ocupacion = ocupacion;
         this.ID = ID;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.nombre = nombre;
     }
 
     public String getOcupacion() {
-        return Ocupacion;
+        return ocupacion;
     }
 
     public void setOcupacion(String ocupacion) {
-        Ocupacion = ocupacion;
+        this.ocupacion = ocupacion;
     }
 
     public String getID() {
