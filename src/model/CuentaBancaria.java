@@ -36,11 +36,11 @@ public class CuentaBancaria {
         this.cliente = cliente;
     }
 
-    public void Depositar(float monto){
+    public void depositar(float monto){
         saldo += monto;
     }
 
-    public void Retirar(float retiro){
+    public void retirar(float retiro){
 
         if (retiro > saldo){
             System.out.println("¡La cantidad que desea retirar excede el saldo disponible!");
@@ -51,6 +51,4 @@ public class CuentaBancaria {
         }
 
     }
-
-
 }
