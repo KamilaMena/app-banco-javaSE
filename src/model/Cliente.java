@@ -39,12 +39,16 @@ public class Cliente {
         this.ID = ID;
     }
 
-    public CuentaBancaria getCuentabancaria() {
-        return cuentabancaria;
-    }
-
     public void setCuentabancaria(CuentaBancaria cuentabancaria) {
         this.cuentabancaria = cuentabancaria;
+    }
+
+    public void procesarTransaccion(Transaccion transaccion){
+        transaccion.ejecutarTransaccion();
+    }
+
+    public void consultarSaldo(Transaccion transaccion){
+        transaccion.getSaldo();
     }
 
 }
