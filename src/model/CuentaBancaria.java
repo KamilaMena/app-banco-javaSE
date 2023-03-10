@@ -39,4 +39,18 @@ public class CuentaBancaria {
     public void Depositar(float monto){
         saldo += monto;
     }
+
+    public void Retirar(float retiro){
+
+        if (retiro > saldo){
+            System.out.println("¡La cantidad que desea retirar excede el saldo disponible!");
+            System.out.println("Saldo: $" + saldo);
+        } else {
+            System.out.println("¡Retiro realizado!");
+            saldo -= retiro;
+        }
+
+    }
+
+
 }
